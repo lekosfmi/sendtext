@@ -1,6 +1,6 @@
 {
   "name": "sendtext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send text from the terminal / command prompts for free!",
   "main": "index.js",
   "scripts": {
