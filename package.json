@@ -1,10 +1,21 @@
 {
   "name": "sendtext",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Send text from the terminal / command prompts for free!",
+  "homepage": "https://github.com/lephankoby/sendme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lephankoby/sendme.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "shelljs": "latest",
+    "commander": "latest",
+    "cli-color": "latest",
+    "prompt": "latest"
   },
   "keywords": [
     "send",
@@ -12,7 +23,10 @@
     "messages",
     "nodejs"
   ],
-  "author": "Vanielle Le",
+  "author": {
+    "name": "Vanielle Le",
+    "email": "lephankoby@gmail.com"
+  },
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
