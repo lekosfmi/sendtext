@@ -9,8 +9,37 @@ A small terminal app that allows user to send text messages for free
 
 ## Usage
 
+  From the terminal:
+
+  ```
   $ sendtext -m
+  ```
 
-## Release History
+  First Prompt:
+    AreaCodeNumber
 
-* 1.0.4 Initial release
+  Second Prompt:
+    Add Message
+
+  Example:
+
+  ```
+  $ 1230983456
+  ```
+
+  ```
+  $ Hello World
+  ```
+
+Notes:
+
+ - No spaces between the area code and the number
+ - Currently do not support apostrophe within message
+
+
+## Version
+
+* 1.0.4
+
+## Version
+* MIT License
