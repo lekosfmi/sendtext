@@ -41,7 +41,7 @@ Notes:
 
 ## Version
 
-* 1.6.1
+* 1.6
 
 ## License
 * MIT
