@@ -16,29 +16,27 @@ A small terminal app that allows user to send text messages for free
   ```
 
   ```
-  First Prompt:
-    AreaCodeNumber
+  Number: AreaCodeNumber
   ```
 
   ```
-  Second Prompt:
-    Add Message
+  Message: Add Message
   ```
 
   Example:
 
   ```
-  $ 1230983456
+  Number 1230983456
   ```
 
   ```
-  $ Hello World
+  Message: Hello World
   ```
 
 Notes:
 
  - No spaces between the area code and the number
- - Currently do not support apostrophe within message
+ - Currently do not support apostrophe within Message
 
 
 ## Version

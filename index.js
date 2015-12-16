@@ -9,7 +9,7 @@ var prompt = require('prompt');
 var userArgs = process.argv.slice(2);
 
 program
-  .version(1.5.0)
+  .version(1.5)
   .option('-m, --message', "Send Text Messages")
   .parse(process.argv)
 
@@ -22,13 +22,13 @@ if(program.message) {
       name: "numbers",
       type: 'number',
       maxLength: "10",
-      description: "Receiver's of Message Numbers (AreaCode+Numbers - No Space, Numbers Only)".white,
+      description: "Number".white,
       required: true
     },
     {
       name: "messages",
       type: "string",
-      description: "Text Message".white,
+      description: "Message".white,
       required: true
     }
   ]
@@ -40,8 +40,8 @@ if(program.message) {
       if(err) {
         console.log(err)
       } else {
-        console.log("Number sent to: " + "\n" + clc.blue(results.numbers));
-        console.log("Your Message: " + "\n" + clc.blue(results.messages));
+        console.log("Number sent to: " + clc.blue(results.numbers));
+        console.log("Your Message: " + clc.blue(results.messages));
         console.log(clc.green("Sent Success!!"));
       }
 
