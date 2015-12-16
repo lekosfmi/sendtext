@@ -1,6 +1,6 @@
 {
   "name": "sendtext",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Send text from the terminal / command prompts for free!",
   "homepage": "https://github.com/lephankoby/sendme",
   "repository": {
