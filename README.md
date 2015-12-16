@@ -15,11 +15,15 @@ A small terminal app that allows user to send text messages for free
   $ sendtext -m
   ```
 
+  ```
   First Prompt:
     AreaCodeNumber
+  ```
 
+  ```
   Second Prompt:
     Add Message
+  ```
 
   Example:
 
