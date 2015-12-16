@@ -22,13 +22,13 @@ if(program.message) {
       name: "numbers",
       type: 'number',
       maxLength: "10",
-      description: "Number".white,
+      description: "Number:".white,
       required: true
     },
     {
       name: "messages",
       type: "string",
-      description: "Message".white,
+      description: "Message:".white,
       required: true
     }
   ]

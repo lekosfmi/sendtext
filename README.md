@@ -26,7 +26,7 @@ A small terminal app that allows user to send text messages for free
   Example:
 
   ```
-  Number 1230983456
+  Number: 1230983456
   ```
 
   ```
