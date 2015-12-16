@@ -41,5 +41,8 @@ Notes:
 
 * 1.0.4
 
-## Version
-* MIT License
+## License
+* MIT
+
+---
+###### Copyright (c) 2015 Koby Phan Le

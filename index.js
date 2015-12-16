@@ -9,7 +9,7 @@ var prompt = require('prompt');
 var userArgs = process.argv.slice(2);
 
 program
-  .version(1.0)
+  .version(1.5.0)
   .option('-m, --message', "Send Text Messages")
   .parse(process.argv)
 
