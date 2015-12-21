@@ -1,8 +1,8 @@
 {
   "name": "sendtext",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "description": "Send text from the terminal / command prompts for free!",
-  "homepage": "https://github.com/lephankoby/sendme",
+  "homepage": "https://github.com/lephankoby/sendtext",
   "repository": {
     "type": "git",
     "url": "git@github.com:lephankoby/sendtext.git"
@@ -21,10 +21,11 @@
     "send",
     "text",
     "messages",
-    "nodejs"
+    "command line",
+    "utility"
   ],
   "author": {
-    "name": "Vanielle Le",
+    "name": "Koby Le",
     "email": "lephankoby@gmail.com"
   },
   "license": "MIT",
