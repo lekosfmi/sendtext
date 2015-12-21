@@ -16,7 +16,7 @@ A small terminal app that allows user to send text messages for free
   ```
 
   ```
-  Number: AreaCodeNumber
+  Number: (AreaCode)Number
   ```
 
   ```
@@ -36,12 +36,11 @@ A small terminal app that allows user to send text messages for free
 Notes:
 
  - No spaces between the area code and the number
- - Currently do not support apostrophe within Message
-
+ - Number: Maximum of 10 Numbers
 
 ## Version
 
-* 1.6
+* 2.0
 
 ## License
 * MIT

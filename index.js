@@ -1,50 +1,52 @@
 #!/usr/bin/env node
 
-var shell = require('shelljs');
-var program = require('commander');
-var clc = require('cli-color');
-var exec = require('child_process').exec;
-var prompt = require('prompt');
+"use strict"
 
-var userArgs = process.argv.slice(2);
+var shell = require('shelljs')
+var program = require('commander')
+var clc = require('cli-color')
+var exec = require('child_process').exec
+var prompt = require('prompt')
+
+var userArgs = process.argv.slice(2)
 
 program
-  .version(1.6)
+  .version(2.0)
   .option('-m, --message', "Send Text Messages")
   .parse(process.argv)
 
-if(program.message) {
+if (program.message)
 
-  prompt.message = ">".rainbow
+  prompt.message = "=> ".blue
+  prompt.delimiter = ""
 
-  var schema = [
-    {
+  let schema = [{
       name: "numbers",
       type: 'number',
       maxLength: "10",
-      description: "Number:".white,
+      description: "Number".white,
       required: true
-    },
-    {
+    },{
       name: "messages",
       type: "string",
-      description: "Message:".white,
+      description: "Message".white,
       required: true
+    }]
+
+  prompt.start()
+
+  prompt.get(schema, (err, results) => {
+
+    function sentTextMessage() {
+      exec(`curl http://textbelt.com/text -d number=${results.numbers} -d message="${results.messages}"`, (err) => {
+        if(err)
+          console.log(err)
+        else
+          console.log(`Number sent to: ${clc.blue(results.numbers)}`)
+          console.log(`Your Message: ${clc.blue(results.messages)}`)
+          console.log(clc.green("Sent Success!!"))
+      })
     }
-  ]
 
-  prompt.start();
-
-  prompt.get(schema, function(err, results) {
-    exec("curl http://textbelt.com/text -d number=" + results.numbers + " -d " + "'message=" + results.messages + "'", function(err) {
-      if(err) {
-        console.log(err)
-      } else {
-        console.log("Number sent to: " + clc.blue(results.numbers));
-        console.log("Your Message: " + clc.blue(results.messages));
-        console.log(clc.green("Sent Success!!"));
-      }
-
-    });
-  });
-}
+    sentTextMessage()
+  })
