@@ -35,12 +35,12 @@ A small terminal app that allows user to send text messages for free
 
 Notes:
 
- - No spaces between the area code and the number
+ - No spaces between the AreaCode and the Number
  - Number: Maximum of 10 Numbers
 
 ## Version
 
-* 2.0
+* 1.7
 
 ## License
 * MIT

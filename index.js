@@ -11,7 +11,7 @@ var prompt = require('prompt')
 var userArgs = process.argv.slice(2)
 
 program
-  .version(2.0)
+  .version(1.7)
   .option('-m, --message', "Send Text Messages")
   .parse(process.argv)
 
