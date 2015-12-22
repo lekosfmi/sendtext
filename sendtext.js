@@ -1,6 +1,7 @@
 // sendtext file
 var exec = require('child_process').exec
 
+
 var sendtext = (number, message) => {
 
   return exec(`curl http://textbelt.com/text -d number=${number} -d message="${message}"`,
