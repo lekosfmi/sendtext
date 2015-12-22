@@ -15,7 +15,8 @@
     "cli-color": "^1.1.0",
     "commander": "^2.9.0",
     "prompt": "^0.2.14",
-    "shelljs": "^0.5.3"
+    "shelljs": "^0.5.3",
+    "textbelt": "0.0.3"
   },
   "keywords": [
     "send",

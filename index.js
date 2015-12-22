@@ -2,7 +2,6 @@
 
 "use strict"
 
-var shell = require('shelljs')
 var program = require('commander')
 var clc = require('cli-color')
 var exec = require('child_process').exec
@@ -37,7 +36,7 @@ if (program.message)
 
   prompt.get(schema, (err, results) => {
 
-    function sentTextMessage() {
+    let sendTextMessage = () =>
       exec(`curl http://textbelt.com/text -d number=${results.numbers} -d message="${results.messages}"`, (err) => {
         if(err)
           console.log(err)
@@ -46,7 +45,5 @@ if (program.message)
           console.log(`Your Message: ${clc.blue(results.messages)}`)
           console.log(clc.green("Sent Success!!"))
       })
-    }
-
-    sentTextMessage()
-  })
+      sendTextMessage()
+    })
