@@ -5,7 +5,7 @@ A small terminal app that allows user to send text messages for free
 
 ## Installation
 
-  npm install -g sendtext
+  $ npm install -g sendtext
 
 ## Usage
 
@@ -46,4 +46,4 @@ Notes:
 * MIT
 
 ---
-###### Copyright (c) 2015 Koby Phan Le
+###### Copyright (c) 2015 Vanielle Le
