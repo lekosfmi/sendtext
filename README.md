@@ -40,10 +40,10 @@ Notes:
 
 ## Version
 
-* 1.7
+* 1.8
 
 ## License
 * MIT
 
 ---
-###### Copyright (c) 2015 Koby Phan Le
+###### Copyright (c) 2015 Vanielle Le
