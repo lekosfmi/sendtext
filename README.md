@@ -18,8 +18,8 @@ $ sendtext -m
 
 Example
 ```
-$ Number: 1230983456
-$ Message: Hello World
+  Number: 1230983456
+  Message: Hello World
 ```
 
 Notes
