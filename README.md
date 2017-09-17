@@ -31,4 +31,4 @@ Notes
  * Version: 1.8
 
 -------------------
-###### Copyright (c) 2016 Vanielle Le
+###### Copyright (c) 2016 Vanielle Lee
